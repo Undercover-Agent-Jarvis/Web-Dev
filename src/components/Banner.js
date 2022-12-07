@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Web Developer", "UI/UX Designer", "Discord Bot Developer", "Ethical Hacker", "Grey Hat Hacker" ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,8 +56,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h1>{`Hi 👋, I'm Jarvis`} <br></br></h1> <h2><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "UI/UX Designer", "Discord Bot Developer", "Ethical Hacker", "Grey Hat Hacker" ]'><span className="wrap">{text}</span></span></h2>
+                  <p>Hey 👋, I'm Jarvis (Your's Jarvis) and i just completed my 18 years old and i am basically from Madhya Pradesh India, i am a Self-Learned Full Stack of Web Development... Currently I am a Student of Computer Science Engineering + Artificial Intelligence & Data Science. and I'm constantly learning, and I like to share my knowledge and currently...</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
